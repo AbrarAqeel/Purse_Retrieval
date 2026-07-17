@@ -29,7 +29,7 @@ def get_database():
 
 
 def main() -> None:
-    st.title("👜 Purse Retrieval System")
+    st.title("Purse Retrieval System")
     st.write(
         "Upload a photo. Choose **Detect Purse** to highlight the purse directly in your "
         "uploaded photo, or **Find Model with Purse** to search for matching items in the database."
@@ -59,9 +59,9 @@ def main() -> None:
         # Separate Action Buttons side by side
         col_btn1, col_btn2 = st.columns(2)
         with col_btn1:
-            detect_clicked = st.button("🎯 Detect Purse", use_container_width=True)
+            detect_clicked = st.button("Detect Purse", use_container_width=True)
         with col_btn2:
-            search_clicked = st.button("🔍 Find Model with Purse", type="primary", use_container_width=True)
+            search_clicked = st.button("Find Model with Purse", type="primary", use_container_width=True)
 
     with col_results:
         # Option A: Detect Purse (Draw Bounding Box on upload)
