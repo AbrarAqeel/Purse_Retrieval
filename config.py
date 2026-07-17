@@ -24,8 +24,8 @@ METADATA_PATH = INDEX_DIR / "metadata.pkl"
 # COCO class 26 is "handbag", so this works out of the box.
 # ---------------------------------------------------------------------------
 YOLO_MODEL = "yolov8n.pt"          # smallest pretrained checkpoint, auto-downloads on first use
-HANDBAG_CLASS_ID = 26
-DETECTION_CONF_THRESHOLD = 0.15    # lower = more detections, more false positives
+HANDBAG_CLASS_ID = [24, 26, 28]
+DETECTION_CONF_THRESHOLD = 0.03    # lower = more detections, more false positives
 DETECTION_IOU_THRESHOLD = 0.45
 
 # ---------------------------------------------------------------------------
@@ -39,7 +39,7 @@ EMBEDDING_MODEL_NAME = "facebook/dinov2-small"   # ~90MB, CPU-friendly
 # Retrieval
 # ---------------------------------------------------------------------------
 TOP_K = 8                  # candidate pool pulled from FAISS before filtering
-SIMILARITY_THRESHOLD = 0.50  # floor a result must clear to be considered at all
+SIMILARITY_THRESHOLD = 0.80  # floor a result must clear to be considered at all
 MATCH_MARGIN = 0.05          # a result must ALSO be within this margin of the
                               # single BEST match to be shown. This is what stops
                               # loosely-similar results from flooding the output
