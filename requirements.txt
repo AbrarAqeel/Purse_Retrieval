@@ -1,0 +1,9 @@
+# CPU-only by default -- `pip install torch` on Windows/Linux pulls the CPU
+# wheel unless you point it at a CUDA index (see README.md for that).
+streamlit>=1.35
+ultralytics>=8.2
+transformers>=4.42
+torch>=2.2
+faiss-cpu>=1.8
+Pillow>=10.0
+numpy>=1.26

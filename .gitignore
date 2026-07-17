@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+
+# Auto-downloaded model weights (re-downloaded automatically on first run)
+yolov8n.pt
+*.pt
+
+# Generated index artifacts -- these are build outputs of build_index.py,
+# not source. Regenerate them locally rather than committing binary blobs.
+# Comment these two lines out if you actually want the index tracked in git.
+embeddings/*.index
+embeddings/*.pkl
+
+# Streamlit
+.streamlit/
+
+# OS/editor cruft
+.DS_Store
+.vscode/
+*.swp
